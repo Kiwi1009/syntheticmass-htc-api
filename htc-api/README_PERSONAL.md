@@ -21,8 +21,8 @@
 
 1. **克隆專案**
    ```bash
-   git clone <your-github-repo-url>
-   cd syntheticmass/htc-api/api
+   git clone https://github.com/Kiwi1009/syntheticmass-htc-api.git
+   cd syntheticmass-htc-api/htc-api/api
    ```
 
 2. **創建虛擬環境**
