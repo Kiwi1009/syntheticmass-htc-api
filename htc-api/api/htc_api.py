@@ -1,8 +1,8 @@
 #!flask/bin/python
 from flask import Flask, jsonify, request, abort, g, send_from_directory
 from flask_cors import CORS
-from flask.ext.autodoc import Autodoc
-from flask_cache import Cache
+from flask_autodoc import Autodoc
+from flask_caching import Cache
 
 import logging
 import re
@@ -91,7 +91,7 @@ def getData(conn, query, params=None):
             cur.execute(query, params)
         else:
             cur.execute(query)
-	return json.dumps(cur.fetchall(), indent=2)
+        return json.dumps(cur.fetchall(), indent=2)
 
 
 #removes CR LF characters from string, for safer logging

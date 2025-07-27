@@ -43,7 +43,7 @@ def getData(conn, query, params=None):
             else:
                 cur.execute(query)
         except Exception as exc:
-            print "Unable to execute query. Error was {0}".format(str(exc))
+            print("Unable to execute query. Error was {0}".format(str(exc)))
             raise exc
 
         # Retrieve the results of the query
